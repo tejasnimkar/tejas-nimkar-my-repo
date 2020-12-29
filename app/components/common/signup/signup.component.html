@@ -1,0 +1,64 @@
+
+
+
+<div class="container-fluid">
+    <div class="row background fullscreen">
+      <div class="col-md-12">
+<form method="post" #myForm2="ngForm" (ngSubmit)="callForSignUpValidation()">
+  <div>
+    <div class="card md-12 center shadow bg-white rounded" style="max-width:1000px;
+        height:650px; margin: 0 auto;margin-top: 42px;">
+      <div class="row no-gutters">
+
+        <div class="container">
+          <div class="row">
+          <div class="col-md-2"></div>
+
+        <div class="col-md-8 center">
+          <div class="card-body margin-auto" style="margin: 32px;">
+            <h2 class="card-title" style="margin: 8px; text-align: center;">Register</h2>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input placeholder="elon musk" type="name" [(ngModel)]="name" name="name" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input  placeholder="something@gmail.com" type="email" [(ngModel)]="email" name="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input placeholder="Something@123" type="password" [(ngModel)]="password" name="password" class="form-control"
+                id="password">
+            </div>
+            <div class="form-group">
+              <label placeholder="887766554433" for="phone">Phone</label>
+              <input type="phone" [(ngModel)]="phone" name="phone" class="form-control" id="phone">
+            </div>
+
+
+            <div style="text-align: center; margin-top: 24px;">
+              <button type="submit" class="btn btn-success"
+                style="padding-left:24px; padding-right: 24px;">SignUp</button>
+              <button routerLink="/user/owner" type="submit" class="btn btn-outline-danger"
+                style="padding-left:24px; padding-right: 24px;margin-left: 16px">Cancel</button>
+            </div>
+
+            <div routerLink="/owner/dashboard" style="margin-top:72px;">
+              <button type="submit" class="btn btn-block btn-outline-primary">SignIn</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+.center {
+  text-align: center;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.main-btn {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.info-card-rect {
+  width: 400px;
+  height: 200px;
+}
+
+.title {
+  font-size: 80px;
+}
+

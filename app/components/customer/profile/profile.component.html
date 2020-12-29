@@ -1,0 +1,61 @@
+<!-- customernavbar -->
+<app-customernavbar></app-customernavbar>
+
+<br>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-12 center">
+
+      <!-- <img src="../../../../assets/images/face.png"> -->
+      <br>
+      <h3>{{userName}}'s Profile</h3>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+  <div class="row">
+
+     <!-- <div class="col-md-4 center">
+       <div class="card shadow card-btn" style="  background-image: linear-gradient(to bottom right, #ff9966, #ff5e62);
+      ">
+         <div class="card-body">
+           <p class="card-text">
+             Show Order
+           </p>
+         </div>
+       </div>
+     </div> -->
+
+    <div class="col-md-6 center">
+      <div class="card shadow card-btn btn-outline-primary">
+        <div class="card-body">
+          <p routerLink="/customer/update-profile" class="card-text">
+            Edit Profile
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 center">
+      <div class="card shadow card-btn btn-outline-primary">
+        <div class="card-body">
+          <p routerLink="/cutomer/addaddress" class="card-text">
+           Add Address
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<br>
+<!-- footer -->
+<app-common-footer></app-common-footer>

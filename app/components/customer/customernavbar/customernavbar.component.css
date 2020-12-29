@@ -1,0 +1,52 @@
+.navbar-logo {
+  margin-left: 108px;
+}
+
+.navbar-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-5 {
+  margin: 10px;
+}
+
+.navbar-logo {
+  margin-left: 108px;
+}
+
+.navbar-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-5 {
+  margin: 10px;
+}
+
+.textcolor{
+  color: #FF5733;
+}
+
+.textcolor:hover {
+  color: #FFC300 ;
+}
+
+
+.textcolorChange{
+
+
+  text-decoration-color: red
+}

@@ -1,0 +1,113 @@
+<!-- customernavbar -->
+<app-customernavbar></app-customernavbar>
+
+
+
+<!-- cart -->
+<div class="container-fluid">
+
+  <div class="row background">
+    <div class="col-md-1"></div>
+  <!--
+        <div class="card shadow" style="width: 100%;">
+          <div class="card-header">
+            {{paymentDetailsText}}
+          </div>
+          <div class="card-body">
+
+            <div class="btn-group btn-group-toggle card-title" data-toggle="buttons">
+              <br>
+              <label class="btn btn-outline-primary  active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Debit Card
+              </label>
+              <label class="btn btn-outline-primary  ">
+                <input type="radio" name="options" id="option2" autocomplete="off"> UPI ID
+              </label>
+              <label class="btn btn-outline-primary ">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Wallet
+              </label>
+            </div>
+
+            <p class="card-text">{{upi}}</p>
+          </div>
+        </div> -->
+
+    <div class="col-md-10">
+        <br>
+
+        <div class="card shadow" style="width: 100%;">
+            <!-- <div class="card-header">
+              {{addressText}}
+            </div> -->
+            <div class="card-body">
+
+              <div class="btn-group btn-group-toggle card-title" data-toggle="buttons">
+                <br>
+                <label class="btn btn-outline-primary  active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Home
+                </label>
+                <label class="btn btn-outline-primary  ">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Work
+                </label>
+              </div>
+
+              <p class="card-text">{{userAddressDetails}}</p>
+            </div>
+          </div>
+      <br>
+      <div class="card shadow" style="width: 100%;">
+        <!-- <div class="card-header">
+          {{cartDetailsText}}
+         <p class="card-text">{{userJoinDate}}</p>
+        </div> -->
+        <br>
+        <img src="../../../../assets/images/calculater.gif" style="width: 96px; height: 96px; margin: auto;"
+          class="card-img-top" alt="bill">
+        <div class="card-body">
+
+          <div>
+            <table class="table table-sm table-hover" style="width: 100%; text-align: left;">
+              <tr  class="text-center">
+                <th>Menu</th>
+                <th>Quantity</th>
+                <th></th>
+                <th>Price</th>
+                <th>ItemPrice</th>
+              </tr>
+              <tr *ngFor="let item of cartItemsList">
+                <td class="text-center">{{item.cartItemsMenuName}}</td>
+                <td class="text-center">{{item.cartItemsQuantity}}</td>
+                <td class="text-center"> * </td>
+                <td class="text-center">{{item.cartItemsPrice}}</td>
+                <td class="text-center">{{item.cartItemsTotalPrice}}</td>
+              </tr>
+            </table>
+          </div>
+
+           <div class="card-header">
+             <h3>Total Price : {{finalCartPrice}}</h3>
+           </div>
+           <br>
+          <div style="text-align: center;">
+            <a *ngIf="finalCartPrice>0" routerLink="/customer/success"  class="btn btn-outline-success"
+              style="margin: auto;">Confirm Your Order</a>
+&nbsp;
+              <a routerLink="/customer/menu" class="btn btn-outline-danger" style="margin: auto;">Cancel Order</a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+
+    </div>
+    <div class="col-md-1"></div>
+
+  </div>
+</div>
+
+
+<!-- footer -->
+<app-common-footer></app-common-footer>
+

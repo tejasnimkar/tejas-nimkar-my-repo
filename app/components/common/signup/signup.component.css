@@ -1,0 +1,31 @@
+.text-align{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.center{
+  margin: auto;
+}
+
+.background {
+  background-image: url('/assets/images/pizza-two.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.card-radius{
+  border-radius: 100px;
+}

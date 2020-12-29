@@ -1,0 +1,45 @@
+<div class="container-fluid fullscreen">
+
+  <div class="row " style="height: 100%;">
+
+    <div class="col-md-12">
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <table align="left">
+              <tr>
+                <td>
+                  <img style="padding: 5px;" src="../../../../assets/images/dashmenu-black.png">
+                </td>
+                <td style="text-align: left; font-weight: bold;">{{todaysDate}}</td>
+              </tr>
+            </table>
+
+
+            <table align="right">
+              <tr>
+                <td>
+                  <button class="btn btn-danger" (click)="signOut()" style="padding: 5px;" >Logout</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="info-area">
+
+          <app-dashboardhome></app-dashboardhome>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
